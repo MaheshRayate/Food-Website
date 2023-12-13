@@ -1,0 +1,327 @@
+/* CSS RESET */
+*
+{
+    padding:0;
+    margin:0;
+}
+
+/* NAVBAR */
+#navbar
+{
+    display:flex;
+    align-items:center;
+}
+
+#navbar::before
+{
+    content:"";
+    background-color:black;
+    position:absolute;
+    height:12%;
+    width:100%;
+    top:0;
+    left:0;
+    opacity:0.3;
+}
+
+/* NAVBAR ul */
+.navlinks
+{
+    list-style:none;
+    display:flex;
+}
+
+/* NAVBAR ul li */
+#navbar ul li
+{
+    font-size:1.3rem;
+}
+
+/* NAVBAR ul li a */
+.navlinks li a
+{
+    text-decoration:none;
+    display:block;
+    padding:3px 22px;
+    color:white;
+
+    font-family:'Rethink Sans', sans-serif;
+}
+
+.navlinks li a:hover
+{
+    color:black;
+    background-color:white;
+    border-radius:6px;
+}
+
+/* NAVBAR #logo  */
+#logo
+{
+    margin:10px 45px;
+}
+
+#logo img
+{
+    cursor:pointer;
+    height:56px;
+    margin:3px 6px;
+}
+
+
+
+/* HOME SECTION */
+
+#home
+{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:500px;
+    padding:3px 300px;
+
+}
+
+#home::before
+{
+    content:"";
+    background-image:url("img/bg1.jpg");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    position:absolute;
+
+    height:90%;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:-1;
+    opacity:0.96;
+
+}
+
+#home h1
+{
+    color:white;
+    font-family: 'Acme', sans-serif;
+    
+}
+
+#home p
+{
+    
+    color:white;
+    text-align:center;
+    font-size:1.2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+/* SERVICES */
+
+.services h1
+{
+    font-family:'Acme', sans-serif;
+    color:black;
+}
+#services
+{
+    display:flex;
+    margin:34px;
+}
+
+#services .box
+{
+    border:2px solid brown;
+    margin-inline:10px;
+    border-radius:10px;
+    padding:10px;
+    background-color:#ede9e9;
+
+}
+
+#services .box h2
+{
+    font-family: 'Lato', sans-serif;
+}
+
+#services .box img
+{
+    height:160px;
+    display:block;
+    margin:auto;
+}
+
+#services .box p
+{
+    font-family: 'Lato', sans-serif;
+}
+
+/* CLIENT-SECTION */
+
+#client-section
+{
+    height:330px;
+
+}
+
+#client-section h1
+{
+    font-family:'Acme', sans-serif;
+    color:black;
+
+}
+
+#client-section::before
+{
+    content:"";
+   
+    position:absolute;
+    background-image:url("img/bg.jpg");
+    /* background-repeat:no-repeat;
+    background-position:bottom right;
+    background-size:cover; */
+
+    height:330px;
+    width:100%;
+    z-index:-1;
+    opacity:0.4;
+}
+
+#client-section #clients
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+} 
+
+.client-item
+{
+    margin:15px 30px;
+}
+
+#clients img
+{
+    height:124px;
+}
+
+/* CONTACT-SECTION */
+#contact
+{
+    position:relative;  
+
+}
+
+#contact::before
+{
+    content:"";
+    position:absolute;
+    background-image:url(img/contact.jpg);
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:cover;
+
+    height:100%;
+    width:100%;
+
+    z-index:-1;
+    opacity:0.4;
+}
+
+#contact h1
+{
+    font-family:'Acme', sans-serif;
+   
+}
+
+#contact-box
+{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom:34px;
+}
+
+#contact-box form
+{
+    width:40%;
+}
+
+.form-group
+{
+    /* margin:0px 10px 10px 10px; */
+
+}
+
+#contact-box form label
+{
+    font-size:1.3rem;
+    font-family: 'Lato', sans-serif;
+}
+
+
+#contact-box input,
+#contact-box textarea
+{
+    width:100%;
+    padding:0.5rem;
+    border-radius:6px;
+    font-family: 'Lato', sans-serif;
+
+}
+
+
+
+
+
+
+
+/* FOOTER */
+
+footer
+{
+    background-color:black;
+    color:white;
+    padding:20px;
+    font-family:Lato;
+    font-size:1.3rem;
+}
+
+
+/* UTILITY CLASSES */
+
+.h-primary
+{
+   font-size:3.8rem;
+   padding:12px; 
+}
+
+.h-secondary
+{
+    font-size:2.3rem;
+    padding:12px;
+}
+
+.btn
+{
+    cursor:pointer;
+    padding:6px 20px;
+    border:2px solid white;
+    background-color:brown;;
+    color:white;
+    margin:17px;
+    font-size:1.2rem;
+    border-radius:13px;
+}
+
+.btn:hover
+{
+    color:brown;
+    background-color:white;
+}
+
+.center
+{
+    text-align:center;
+}
